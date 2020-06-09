@@ -3,24 +3,20 @@ from tkinter import font
 import tkinter.messagebox
 
 
-class MainUI:
 
+pwindow = Tk("Korea Lent Car Info")
+pwindow.geometry("400x600+750+200")
+DataList = []
 
-    def __init__(self):
-        self.initUI()
+def initTopText():
+    TempFont = font.Font(pwindow , size=20, weight='bold', family='Conslas')
+    MainText = Label(pwindow, font = TempFont, text = "[전국 렌터카 업체 정보]")
+    MainText.pack()
+    MainText.place(x=50)
 
-    def initUI(self):
-        self.pwindow = Tk("Korea Lent Car Info")
-        self.pwindow.geometry("800x800")
-        self.TempFont = font.Font(size = 16, weight = 'bold', family = 'Conslas')
-        self.label =[]
-        self.entry = []
-        self.label.append(Label(self.pwindow, text= "플레이어 명수", font = self.TempFont))
-        self.label[0].grid(row=0,column = 0)
-
-
-        self.pwindow.mainloop()
+initTopText()
+pwindow.mainloop()
 
 
 
-MainUI()
+
