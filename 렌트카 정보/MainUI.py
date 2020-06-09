@@ -14,6 +14,8 @@ def initTopText():
     MainText.pack()
     MainText.place(x=50)
 
+def initMainImage():
+    MainImage = Label(pwindow, image = )
 initTopText()
 pwindow.mainloop()
 
