@@ -31,9 +31,37 @@ searchDaejeonButton = Button(pwindow, font = TempFont, text ="대전", command =
 searchDaejeonButton.pack()
 searchDaejeonButton.place(x = 150, y=200)
 
+searchJeonRaBukButton = Button(pwindow, font = TempFont, text ="전라북도", command = SearchGanWondo)
+searchJeonRaBukButton.pack()
+searchJeonRaBukButton.place(x = 120, y=250)
+
+searchGwangjuButton = Button(pwindow, font = TempFont, text =" 광주 ", command = SearchGanWondo)
+searchGwangjuButton.pack()
+searchGwangjuButton.place(x = 135, y=300)
+
+searchJeonRaNamButton = Button(pwindow, font = TempFont, text ="전라남도", command = SearchGanWondo)
+searchJeonRaNamButton.pack()
+searchJeonRaNamButton.place(x = 115, y=330)
+
 searchGyeongSangBukButton = Button(pwindow, font = TempFont, text ="경상북도", command = SearchGanWondo)
 searchGyeongSangBukButton.pack()
 searchGyeongSangBukButton.place(x = 220, y=190)
+
+searchDaeguButton = Button(pwindow, font = TempFont, text =" 대구 ", command = SearchGanWondo)
+searchDaeguButton.pack()
+searchDaeguButton.place(x = 235, y=240)
+
+searchUlSanButton = Button(pwindow, font = TempFont, text ="울산", command = SearchGanWondo)
+searchUlSanButton.pack()
+searchUlSanButton.place(x = 285, y=275)
+
+searchBuSanButton = Button(pwindow, font = TempFont, text =" 부산 ", command = SearchGanWondo)
+searchBuSanButton.pack()
+searchBuSanButton.place(x = 265, y=305)
+
+searchGyeongSangNamButton = Button(pwindow, font = TempFont, text ="경상남도", command = SearchGanWondo)
+searchGyeongSangNamButton.pack()
+searchGyeongSangNamButton.place(x = 205, y=280)
 
 searchChoongBukButton = Button(pwindow, font = TempFont, text ="충청북도", command = SearchGanWondo)
 searchChoongBukButton.pack()
