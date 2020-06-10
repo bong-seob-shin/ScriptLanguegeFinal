@@ -172,7 +172,7 @@ def SearchChungNam():
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TopLabel = Label(windowGW, font=TempFont1, text="[충청남도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=30 ,y= 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
