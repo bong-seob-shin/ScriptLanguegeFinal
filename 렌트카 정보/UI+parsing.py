@@ -80,7 +80,7 @@ def SearchGangWondo():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -146,7 +146,7 @@ def SearchKyeongKiDo():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -211,7 +211,7 @@ def SearchChungNam():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -276,7 +276,7 @@ def SearchDaeJeon():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -341,7 +341,7 @@ def SearchJeonBuk():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -407,7 +407,7 @@ def SearchGwangJu():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -472,7 +472,7 @@ def SearchJeonNam():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -538,7 +538,7 @@ def SearchGyeongBuk():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -604,7 +604,7 @@ def SearchDaegu():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -670,7 +670,7 @@ def SearchBusan():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -735,7 +735,7 @@ def SearchGyeongNam():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -801,7 +801,7 @@ def SearchChungBuk():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -866,7 +866,7 @@ def SearchUlSan():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -928,11 +928,11 @@ def SearchIncheon():
     ILabel.pack()
     ILabel.place(x=215, y=70)
 
-    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchIn14)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchIn15)
     IButton.pack()
     IButton.place(x=350, y=70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -997,7 +997,73 @@ def SearchSeoul():
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
-    DetailButton = Button(windowGW, width = 18, height = 2, font = ILabelFont, text = "세부사항",command =  DetailText1)
+    DetailButton = Button(windowGW, width = 18, height = 2, font = ILabelFont, text = "세부 사항",command =  DetailText1)
+    DetailButton.pack()
+    DetailButton.place(x=215, y=130)
+
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton.pack()
+    MapButton.place(x=215, y=210)
+
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton.pack()
+    SortNameButton.place(x=215, y=290)
+
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton.pack()
+    SortAddressButton.place(x=215, y=370)
+
+def SearchJejoo():
+    global listbox, ILabel
+    listvari = [] * 1000
+    windowGW = Tk("GangWon")
+    windowGW.geometry("400x450")
+
+    frame = tkinter.Frame(windowGW)
+    TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
+    TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
+
+    TopLabel = Label(windowGW, font=TempFont1, text="[제주도 렌터카 업체 정보]")
+    TopLabel.pack()
+    TopLabel.place(x=50)
+    RenderTextScrollbar = Scrollbar(frame)
+    RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
+    RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
+    RenderTextHorizonbar.pack(side=BOTTOM, fill=X, expand=True)
+
+    listbox = tkinter.Listbox(frame, font=TempFont, width=20, height=19, borderwidth=12, relief='ridge',
+                              yscrollcommand=RenderTextScrollbar.set, xscrollcommand=RenderTextHorizonbar.set)
+
+    city = str("제주특별")
+    for data in carDataList:
+        if city in str(data.address):
+            try:
+                text = data.address + "[" + data.name + "]"
+                listbox.insert(END, text)
+            except:
+                print("error")
+
+    listbox.pack(side=LEFT, fill=Y)
+    RenderTextScrollbar.config(command=listbox.yview)
+    RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
+    RenderTextHorizonbar.config(command=listbox.xview)
+    RenderTextHorizonbar.pack(side=BOTTOM, expand=True, fill=X)
+    listbox.activate(0)
+
+    frame.pack()
+    frame.place(x=20, y=70)
+
+    global ILabel
+    ILabelFont = font.Font(windowGW, size=10, weight='bold', family='Consolas')
+    ILabel = Entry(windowGW, font=ILabelFont, width=18, borderwidth=3, relief='ridge')
+    ILabel.pack()
+    ILabel.place(x=215, y=70)
+
+    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchIn16)
+    IButton.pack()
+    IButton.place(x=350, y=70)
+
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -1056,11 +1122,11 @@ def SearchAll():
     ILabel.pack()
     ILabel.place(x=215, y=70)
 
-    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchIn14)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchInAll)
     IButton.pack()
     IButton.place(x=350, y=70)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
@@ -1078,8 +1144,51 @@ def SearchAll():
 
 
 def DetailText1():
+    global listbox
+
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
+    #print(listbox.get(ACTIVE))
+
+    frame = tkinter.Frame(windowGW)
+    TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
+    TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
+
+    TopLabel = Label(windowGW, font=TempFont1, text="[세부 사항]")
+    TopLabel.pack()
+    TopLabel.place(x=120)
+    RenderTextScrollbar = Scrollbar(frame)
+    RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
+    RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
+    RenderTextHorizonbar.pack(side=BOTTOM, fill=X, expand=True)
+
+    listbox = tkinter.Listbox(frame, font=TempFont, width=36, height=19, borderwidth=12, relief='ridge',
+                              yscrollcommand=RenderTextScrollbar.set, xscrollcommand=RenderTextHorizonbar.set)
+
+    city = str("경상남도")
+    for data in carDataList:
+        if city in str(data.address):
+            try:
+                text = data.address + "[" + data.name + "]"
+                listbox.insert(END, text)
+            except:
+                print("error")
+
+    listbox.pack(side=LEFT, fill=Y)
+    RenderTextScrollbar.config(command=listbox.yview)
+    RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
+    RenderTextHorizonbar.config(command=listbox.xview)
+    RenderTextHorizonbar.pack(side=BOTTOM, expand=True, fill=X)
+    listbox.activate(0)
+
+    frame.pack()
+    frame.place(x=20, y=70)
+
+
+    EButton = Button(windowGW, font=TempFont,width = 8 , height = 3, text="이메일 전송", command= SendMail)
+    EButton.pack()
+    EButton.place(x=320, y=370)
+
 
 def MapImage1():
     windowGW = Tk("GangWon")
@@ -1090,6 +1199,9 @@ def SortNameList():
 
 def SortAddressList():
    pass
+
+def SendMail():
+    pass
 
 def SearchIn1():
     listbox.delete(0,5000)
@@ -1302,7 +1414,7 @@ def SearchIn13():
 def SearchIn14():
     listbox.delete(0,5000)
     searchTemp= str(ILabel.get())
-    city = str("서울")
+    city = str("서울특별")
     for data in carDataList:
         if city in str(data.address):
             if searchTemp in str(data.address) or searchTemp in str(data.name):
@@ -1315,6 +1427,51 @@ def SearchIn14():
 
                 listbox.insert(END,text)
 
+def SearchIn15():
+    listbox.delete(0,5000)
+    searchTemp= str(ILabel.get())
+    city = str("인천광역시")
+    for data in carDataList:
+        if city in str(data.address):
+            if searchTemp in str(data.address) or searchTemp in str(data.name):
+                try:
+                    text = data.address+" ["+data.name+"]"
+                except:
+                    print("error")
+                    # if data.address == None:
+                    #     text = data.address+" ["+data.name+"]"
+
+                listbox.insert(END,text)
+
+
+def SearchIn16():
+    listbox.delete(0,5000)
+    searchTemp= str(ILabel.get())
+    city = str("제주특별")
+    for data in carDataList:
+        if city in str(data.address):
+            if searchTemp in str(data.address) or searchTemp in str(data.name):
+                try:
+                    text = data.address+" ["+data.name+"]"
+                except:
+                    print("error")
+                    # if data.address == None:
+                    #     text = data.address+" ["+data.name+"]"
+
+                listbox.insert(END,text)
+
+def SearchInAll():                                 # 전체 검색
+    listbox.delete(0,50000)
+    searchTemp= str(ILabel.get())
+    for data in carDataList:
+        if searchTemp in str(data.address) or searchTemp in str(data.address):
+            try:
+                text = "["+data.address+"] "+data.name
+            except:
+                print("error")
+                if data.address == None:
+                    text = "["+data.address+"] " +data.name
+            listbox.insert(END,text)
 
 # def SearchIn():                                 # 전체 검색
 #     listbox.delete(0,5000)
@@ -1384,6 +1541,11 @@ searchBuSanButton = Button(pwindow, font = TempFont, text =" 부산 ", command =
 searchBuSanButton.pack()
 searchBuSanButton.place(x = 265, y=305)
 
+searchJeJooButton = Button(pwindow, font = TempFont, text =" 제주도 ", command = SearchJejoo)
+searchJeJooButton.pack()
+searchJeJooButton.place(x = 255, y=365)
+
+
 searchGyeongSangNamButton = Button(pwindow, font = TempFont, text ="경상남도", command = SearchGyeongNam)
 searchGyeongSangNamButton.pack()
 searchGyeongSangNamButton.place(x = 205, y=280)
@@ -1392,13 +1554,13 @@ searchChoongBukButton = Button(pwindow, font = TempFont, text ="충청북도", c
 searchChoongBukButton.pack()
 searchChoongBukButton.place(x = 180, y=140)
 
-searchIncheonButton = Button(pwindow, font = TempFont, text ="인천", command = SearchIncheon)
+searchIncheonButton = Button(pwindow, font = TempFont, text =" 인천 ", command = SearchIncheon)
 searchIncheonButton.pack()
-searchIncheonButton.place(x = 90, y=90)
+searchIncheonButton.place(x = 100, y=90)
 
-searchSeoulButton = Button(pwindow, font = TempFont, text ="서울", command = SearchSeoul)
+searchSeoulButton = Button(pwindow, font = TempFont, text =" 서울 ", command = SearchSeoul)
 searchSeoulButton.pack()
-searchSeoulButton.place(x = 155, y=90)
+searchSeoulButton.place(x = 145, y=90)
 
 searchAllButton = Button(pwindow, font = TempFont, bg = 'green' ,text =" 전국 ", command = SearchAll)
 searchAllButton.pack()
