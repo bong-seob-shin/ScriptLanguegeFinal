@@ -7,6 +7,7 @@ import tkinter.messagebox
 Data = parse('전국렌터카.xml')
 root = Data.getroot()
 
+detailList = list()
 carDataList = []
 
 for i in root.findall('records'):
@@ -95,6 +96,7 @@ def SearchGangWondo():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchKyeongKiDo():
     global listbox,ILabel
     listvari =[]*1000
@@ -161,6 +163,7 @@ def SearchKyeongKiDo():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchChungNam():
     global listbox,ILabel
     listvari =[]*1000
@@ -226,6 +229,7 @@ def SearchChungNam():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchDaeJeon():
     global listbox,ILabel
     listvari =[]*1000
@@ -291,6 +295,7 @@ def SearchDaeJeon():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchJeonBuk():
     global listbox,ILabel
     listvari =[]*1000
@@ -356,6 +361,7 @@ def SearchJeonBuk():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchGwangJu():
     global listbox,ILabel
     listvari =[]*1000
@@ -422,6 +428,7 @@ def SearchGwangJu():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchJeonNam():
     global listbox,ILabel
     listvari =[]*1000
@@ -487,6 +494,7 @@ def SearchJeonNam():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchGyeongBuk():
     global listbox,ILabel
     listvari =[]*1000
@@ -553,6 +561,7 @@ def SearchGyeongBuk():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchDaegu():
     global listbox,ILabel
     listvari =[]*1000
@@ -619,6 +628,7 @@ def SearchDaegu():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchBusan():
     global listbox,ILabel
     listvari =[]*1000
@@ -685,6 +695,7 @@ def SearchBusan():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchGyeongNam():
     global listbox,ILabel
     listvari =[]*1000
@@ -750,6 +761,7 @@ def SearchGyeongNam():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchChungBuk():
     global listbox,ILabel
     listvari =[]*1000
@@ -816,6 +828,7 @@ def SearchChungBuk():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchUlSan():
     global listbox,ILabel
     listvari =[]*1000
@@ -881,6 +894,7 @@ def SearchUlSan():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchIncheon():
     global listbox, ILabel
     listvari = [] * 1000
@@ -947,6 +961,7 @@ def SearchIncheon():
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
+
 def SearchSeoul():
     global listbox,ILabel
     listvari =[]*1000
@@ -1142,13 +1157,10 @@ def SearchAll():
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
-
 def DetailText1():
-    global listbox
 
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    #print(listbox.get(ACTIVE))
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
@@ -1162,24 +1174,15 @@ def DetailText1():
     RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
     RenderTextHorizonbar.pack(side=BOTTOM, fill=X, expand=True)
 
-    listbox = tkinter.Listbox(frame, font=TempFont, width=36, height=19, borderwidth=12, relief='ridge',
+    detailListbox = tkinter.Listbox(frame, font=TempFont, width=36, height=19, borderwidth=12, relief='ridge',
                               yscrollcommand=RenderTextScrollbar.set, xscrollcommand=RenderTextHorizonbar.set)
 
-    city = str("경상남도")
-    for data in carDataList:
-        if city in str(data.address):
-            try:
-                text = data.address + "[" + data.name + "]"
-                listbox.insert(END, text)
-            except:
-                print("error")
-
-    listbox.pack(side=LEFT, fill=Y)
-    RenderTextScrollbar.config(command=listbox.yview)
+    detailListbox.pack(side=LEFT, fill=Y)
+    RenderTextScrollbar.config(command=detailListbox.yview)
     RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
-    RenderTextHorizonbar.config(command=listbox.xview)
+    RenderTextHorizonbar.config(command=detailListbox.xview)
     RenderTextHorizonbar.pack(side=BOTTOM, expand=True, fill=X)
-    listbox.activate(0)
+    detailListbox.activate(0)
 
     frame.pack()
     frame.place(x=20, y=70)
@@ -1189,6 +1192,37 @@ def DetailText1():
     EButton.pack()
     EButton.place(x=320, y=370)
 
+    searchAddress,searchName = str(listbox.get(ACTIVE)).split("[")
+
+    for data in carDataList:
+        if searchAddress in str(data.address):
+            try:
+                text1 = "주소: " +data.address
+                detailListbox.insert(END,text1)
+                text2 = "업체명: " +data.name
+                detailListbox.insert(END,text2)
+                text3 = "자동차보유대수: "+data.TotalCar
+                detailListbox.insert(END,text3)
+                text4 = "승용차보유대수: "+data.s_car
+                detailListbox.insert(END,text4)
+                text5 = "승합차보유대수: "+data.b_car
+                detailListbox.insert(END,text5)
+                text6= "전화번호: "+data.telephone
+                detailListbox.insert(END,text6)
+                text7 = "평일운영시작시각: "+data.weekday_start
+                detailListbox.insert(END,text7)
+                text8 = "평일운영종료시각: "+data.weekday_end
+                detailListbox.insert(END,text8)
+                text9 = "주말운영시작시각: "+data.weekend_start
+                detailListbox.insert(END,text9)
+                text10 ="주말운영종료시각: "+data.weekend_end
+                detailListbox.insert(END,text10)
+                text11 = "휴무일: "+data.personal_day
+                detailListbox.insert(END,text11)
+                text12 = "홈페이지주소: "+data.homepage
+                detailListbox.insert(END,text12)
+            except:
+                pass
 
 def MapImage1():
     windowGW = Tk("GangWon")
@@ -1443,7 +1477,6 @@ def SearchIn15():
 
                 listbox.insert(END,text)
 
-
 def SearchIn16():
     listbox.delete(0,5000)
     searchTemp= str(ILabel.get())
@@ -1472,20 +1505,6 @@ def SearchInAll():                                 # 전체 검색
                 if data.address == None:
                     text = "["+data.address+"] " +data.name
             listbox.insert(END,text)
-
-# def SearchIn():                                 # 전체 검색
-#     listbox.delete(0,5000)
-#     searchTemp= str(ILabel.get())
-#     for data in carDataList:
-#         if searchTemp in str(data.address):
-#             try:
-#                 text = data.name+" ["+data.address+"]"
-#             except:
-#                 print("error")
-#                 if data.address == None:
-#                     text = data.name+" ["+data.address+"]"
-#             listbox.insert(END,text)
-
 
 
 pwindow = Tk("Korea Lent Car Info")
