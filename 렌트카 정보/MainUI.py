@@ -3,15 +3,16 @@ from tkinter import font
 import tkinter.messagebox
 
 
-def SearchIn(str):
-    global listbox
-    index =listbox.get(0 ,"end").index(str)
-    listbox.activate(index)
+def SearchIn():
+    global listbox,ILabel
 
+    #index =listbox.get(0 ,"end").index(ILabel.get())
+    #listbox.activate(index)
+    pass
 
 
 def SearchGangWondo():
-    global listbox
+    global listbox,ILabel
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
@@ -30,6 +31,7 @@ def SearchGangWondo():
     listbox.pack(side=LEFT, fill = Y)
     RenderTextScrollbar.config(command= listbox.yview)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
+    listbox.activate(0)
 
     frame.pack()
     frame.place(x= 20, y = 70)
@@ -39,8 +41,8 @@ def SearchGangWondo():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    ILabelVal = str(ILabel.get())
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command = lambda searchStr = ILabelVal: SearchIn(searchStr))
+
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn)
     IButton.pack()
     IButton.place(x= 350, y = 70)
 
