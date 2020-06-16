@@ -4,12 +4,16 @@ from xml.etree.ElementTree import parse
 from tkinter import *
 from tkinter import font
 import tkinter.messagebox
+import folium
+import webbrowser
 
 Data = parse('전국렌터카.xml')
 root = Data.getroot()
+global SendAllText
 
 detailList = []
 carDataList = []
+
 for i in root.findall('records'):
     for j in i.findall('record'):
         name = j.find('업체명').text
@@ -1228,57 +1232,124 @@ def DetailText1():
     if carDataList[num].address !=None:
         text1 = "주소: " +carDataList[num].address
         detailListbox.insert(END,text1)
+        global Sendtext1
+        Sendtext1 = "주소: " +carDataList[num].address
+    else:
+        Sendtext1 =""
     if carDataList[num].name != None:
         text2 = "업체명: " +carDataList[num].name
         detailListbox.insert(END,text2)
+        global Sendtext2
+        Sendtext2 = "업체명: " +carDataList[num].name
+    else:
+        Sendtext2 =""
     if carDataList[num].TotalCar != None:
         text3 = "자동차보유대수: "+carDataList[num].TotalCar
         detailListbox.insert(END,text3)
+        global Sendtext3
+        Sendtext3 = "자동차보유대수: "+carDataList[num].TotalCar
+    else:
+        Sendtext3 =""
     if carDataList[num].s_car != None:
         text4 = "승용차보유대수: "+carDataList[num].s_car
         detailListbox.insert(END,text4)
+        global Sendtext4
+        Sendtext4 = "승용차보유대수: "+carDataList[num].s_car
+    else:
+        Sendtext4 =""
     if carDataList[num].b_car != None:
         text5 = "승합차보유대수: "+carDataList[num].b_car
         detailListbox.insert(END,text5)
+        global Sendtext5
+        Sendtext5 = "승합차보유대수: "+carDataList[num].b_car
+    else:
+        Sendtext5 =""
     if carDataList[num].telephone != None:
         text6= "전화번호: "+carDataList[num].telephone
         detailListbox.insert(END,text6)
+        global Sendtext6
+        Sendtext6 = "전화번호: "+carDataList[num].telephone
+    else:
+        Sendtext6 =""
     if carDataList[num].weekday_start != None:
         text7 = "평일운영시작시각: "+carDataList[num].weekday_start
         detailListbox.insert(END,text7)
+        global Sendtext7
+        Sendtext7 = "평일운영시작시각: "+carDataList[num].weekday_start
+    else:
+        Sendtext7 =""
     if carDataList[num].weekday_end != None:
         text8 = "평일운영종료시각: "+carDataList[num].weekday_end
         detailListbox.insert(END,text8)
+        global Sendtext8
+        Sendtext8 = "평일운영종료시각: "+carDataList[num].weekday_end
+    else:
+        Sendtext8 =""
     if carDataList[num].weekend_start != None:
         text9 = "주말운영시작시각: "+carDataList[num].weekend_start
         detailListbox.insert(END,text9)
+        global Sendtext9
+        Sendtext9 = "주말운영시작시각: "+carDataList[num].weekend_start
+    else:
+        Sendtext9 = ""
     if carDataList[num].weekend_end != None:
         text10 ="주말운영종료시각: "+carDataList[num].weekend_end
         detailListbox.insert(END,text10)
+        global Sendtext10
+        Sendtext10 ="주말운영종료시각: "+carDataList[num].weekend_end
+    else:
+        Sendtext10=""
     if carDataList[num].personal_day != None:
         text11 = "휴무일: "+carDataList[num].personal_day
         detailListbox.insert(END,text11)
+        global Sendtext11
+        Sendtext11 = "휴무일: "+carDataList[num].personal_day
+    else:
+        Sendtext11 = ""
     if carDataList[num].homepage != None:
         text12 = "홈페이지주소: "+carDataList[num].homepage
         detailListbox.insert(END,text12)
+        global Sendtext12
+        Sendtext12 = "홈페이지주소: "+carDataList[num].homepage
+    else:
+        Sendtext12= ""
 
-    SendText = carDataList[num].address + "\n" + carDataList[num].name + "\n" + carDataList[num].TotalCar + "\n" + carDataList[num].s_car + "\n" + carDataList[num].b_car + "\n" + carDataList[num].telephone + "\n" + carDataList[num].weekday_start + "\n" +carDataList[num].weekday_end + "\n" +carDataList[num].weekend_start + "\n" + carDataList[num].weekend_end + "\n" + carDataList[num].personal_day + "\n" + carDataList[num].homepage
+    global SendAllText
+    SendAllText = Sendtext1 + "\n" + Sendtext2 + "\n" +Sendtext3 + "\n" + Sendtext4 + "\n" + Sendtext5 + "\n" + Sendtext6 + "\n" + Sendtext7 + "\n" + Sendtext8 + "\n" + Sendtext9 + "\n" + Sendtext10 + "\n" + Sendtext11 + "\n" +Sendtext12
+    #print(SendAllText)
 
 def SendMail():
-    pass
+    EmailAddress = "YongJin and BongSub"
+    SendText = SendAllText
+    sendEmail.SendEmail(EmailAddress,SendText)
 
 def MapImage1():
-    windowGW = Tk("GangWon")
-    windowGW.geometry("400x450")
+    num = detailList[listbox.curselection()[0]]
+
+    map_osm = folium.Map(location=[float(carDataList[num].latitude), float(carDataList[num].longitude)], zoom_start=15 )
+    folium.Marker([carDataList[num].latitude, carDataList[num].longitude], popup=carDataList[num].name,
+                  icon=folium.Icon(color ='red', icon='info-sign')).add_to(map_osm)
+
+    filepath = "Map.html"
+    map_osm.save(filepath)
+    webbrowser.open_new_tab(filepath)
+
+def AllMap():
+    map_osm = folium.Map(location=[37.3402849,126.7313189], zoom_start=15)
+    i=0
+    for data in carDataList:
+        folium.Marker([data.latitude,data.longitude], popup=str(i),
+                      icon=folium.Icon(color='red', icon='info-sign')).add_to(map_osm)
+        i += 1
+
+    map_osm.save("Map.html")
+
 
 def SortNameList():
    pass
 
 def SortAddressList():
    pass
-
-def SendMail():
-    pass
 
 def SearchIn1():
     detailList.clear()
@@ -1669,7 +1740,7 @@ def initTopText():
 
 initTopText()
 pwindow.mainloop()
-
+#AllMap()
 
 
 
