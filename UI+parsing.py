@@ -48,7 +48,7 @@ def SearchGangWondo():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[강원도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -85,23 +85,23 @@ def SearchGangWondo():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn1)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색", bg = 'snow2',command =  SearchIn1)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg = 'mint cream',font=ILabelFont, text="세부 사항", command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont,bg ='RosyBrown1', text="주소 정렬", command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -119,7 +119,7 @@ def SearchKyeongKiDo():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[경기도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -155,23 +155,26 @@ def SearchKyeongKiDo():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn2)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", bg='snow2', command=SearchIn2)
     IButton.pack()
-    IButton.place(x= 355, y = 68)
+    IButton.place(x=355, y=68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -188,7 +191,7 @@ def SearchChungNam():
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[충청남도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=30 ,y= 10)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -224,23 +227,26 @@ def SearchChungNam():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn3)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", bg='snow2', command=SearchIn3)
     IButton.pack()
-    IButton.place(x= 355, y = 68)
+    IButton.place(x=355, y=68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -257,7 +263,7 @@ def SearchDaeJeon():
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[대전 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -293,23 +299,26 @@ def SearchDaeJeon():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn4)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", bg='snow2', command=SearchIn4)
     IButton.pack()
-    IButton.place(x= 355, y = 68)
+    IButton.place(x=355, y=68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -326,7 +335,7 @@ def SearchJeonBuk():
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[전라북도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -362,23 +371,26 @@ def SearchJeonBuk():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn5)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", bg='snow2', command=SearchIn5)
     IButton.pack()
-    IButton.place(x= 355, y = 68)
+    IButton.place(x=355, y=68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -396,7 +408,7 @@ def SearchGwangJu():
 
     TopLabel = Label(windowGW, font=TempFont1,bg='ghost white', text="[광주 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -432,23 +444,26 @@ def SearchGwangJu():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn6)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",  bg='snow2',command =  SearchIn6)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -465,7 +480,7 @@ def SearchJeonNam():
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[전라남도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -501,23 +516,26 @@ def SearchJeonNam():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn7)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색", bg='snow2',command =  SearchIn7)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -535,7 +553,7 @@ def SearchGyeongBuk():
 
     TopLabel = Label(windowGW, font=TempFont1,bg='ghost white', text="[경상북도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -571,23 +589,26 @@ def SearchGyeongBuk():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn8)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn8)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -605,7 +626,7 @@ def SearchDaegu():
 
     TopLabel = Label(windowGW, font=TempFont1,bg='ghost white', text="[대구 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -641,23 +662,26 @@ def SearchDaegu():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn9)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn9)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -675,7 +699,7 @@ def SearchBusan():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[부산 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -711,23 +735,26 @@ def SearchBusan():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn10)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn10)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -745,7 +772,7 @@ def SearchGyeongNam():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[경상남도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
     RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
@@ -779,23 +806,26 @@ def SearchGyeongNam():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn11)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn11)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -812,7 +842,7 @@ def SearchChungBuk():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[충청북도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -848,23 +878,26 @@ def SearchChungBuk():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn12)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn12)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -882,7 +915,7 @@ def SearchUlSan():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[울산 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
 
@@ -917,23 +950,26 @@ def SearchUlSan():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn13)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn13)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -951,7 +987,7 @@ def SearchIncheon():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[인천 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
 
@@ -987,23 +1023,26 @@ def SearchIncheon():
     ILabel.pack()
     ILabel.place(x=215, y=70)
 
-    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchIn15)
+    IButton = Button(windowGW, font=ILabelFont, text="검색",bg='snow2', command=SearchIn15)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1021,7 +1060,7 @@ def SearchSeoul():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[서울 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side= RIGHT, expand = True, fill =Y)
     RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL )
@@ -1056,23 +1095,26 @@ def SearchSeoul():
     ILabel.pack()
     ILabel.place(x = 215, y = 70)
 
-    IButton = Button(windowGW, font = ILabelFont, text = "검색",command =  SearchIn14)
+    IButton = Button(windowGW, font = ILabelFont, text = "검색",bg='snow2',command =  SearchIn14)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width = 18, height = 2, font = ILabelFont, text = "세부 사항",command =  DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1090,7 +1132,7 @@ def SearchJejoo():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[제주도 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
     RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
@@ -1125,23 +1167,26 @@ def SearchJejoo():
     ILabel.pack()
     ILabel.place(x=215, y=70)
 
-    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchIn16)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", bg='snow2',command=SearchIn16)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1159,7 +1204,7 @@ def SearchAll():
 
     TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[전국 렌터카 업체 정보]")
     TopLabel.pack()
-    TopLabel.place(x=50)
+    TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
     RenderTextScrollbar.pack(side=RIGHT, expand=True, fill=Y)
     RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
@@ -1190,23 +1235,26 @@ def SearchAll():
     ILabel.pack()
     ILabel.place(x=215, y=70)
 
-    IButton = Button(windowGW, font=ILabelFont, text="검색", command=SearchInAll)
+    IButton = Button(windowGW, font=ILabelFont, text="검색", bg='snow2',command=SearchInAll)
     IButton.pack()
     IButton.place(x= 355, y = 68)
 
-    DetailButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="세부 사항", command=DetailText1)
+    DetailButton = Button(windowGW, width=18, height=2, bg='mint cream', font=ILabelFont, text="세부 사항",
+                          command=DetailText1)
     DetailButton.pack()
     DetailButton.place(x=215, y=130)
 
-    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="맵 보기", command=MapImage1)
+    MapButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='light yellow', text="맵 보기", command=MapImage1)
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
+                            command=SortNameList)
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
+                               command=SortAddressList)
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
