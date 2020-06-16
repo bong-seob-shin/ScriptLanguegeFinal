@@ -7,11 +7,11 @@
             L_DISABLE_3D = false;
         </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a2635dcbc8ac4a6cbf098484e564392d {
+                #map_fecdad06d10742159e878d55b2c6bca0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a2635dcbc8ac4a6cbf098484e564392d" ></div>
+            <div class="folium-map" id="map_fecdad06d10742159e878d55b2c6bca0" ></div>
         
 </body>
 <script>    
     
-            var map_a2635dcbc8ac4a6cbf098484e564392d = L.map(
-                "map_a2635dcbc8ac4a6cbf098484e564392d",
+            var map_fecdad06d10742159e878d55b2c6bca0 = L.map(
+                "map_fecdad06d10742159e878d55b2c6bca0",
                 {
-                    center: [35.8345027709, 128.745358],
+                    center: [36.7738227, 126.4441121],
                     crs: L.CRS.EPSG3857,
                     zoom: 15,
                     zoomControl: true,
@@ -55,32 +55,32 @@
 
         
     
-            var tile_layer_660c6c39012044c6a89a87b993e086df = L.tileLayer(
+            var tile_layer_03b35e1130b84e889a497731a352e078 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_a2635dcbc8ac4a6cbf098484e564392d);
+            ).addTo(map_fecdad06d10742159e878d55b2c6bca0);
         
     
-            var marker_26706b6738e24693afd55f4ead12c35a = L.marker(
-                [35.8345027709, 128.745358],
+            var marker_6b4a04c16d4347ec9459a6b4fbf20298 = L.marker(
+                [36.7738227, 126.4441121],
                 {}
-            ).addTo(map_a2635dcbc8ac4a6cbf098484e564392d);
+            ).addTo(map_fecdad06d10742159e878d55b2c6bca0);
         
     
-            var icon_821ea042417c469ebda7f550439bf135 = L.AwesomeMarkers.icon(
+            var icon_442ce10d8586423591d0e2b414336a38 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_26706b6738e24693afd55f4ead12c35a.setIcon(icon_821ea042417c469ebda7f550439bf135);
+            marker_6b4a04c16d4347ec9459a6b4fbf20298.setIcon(icon_442ce10d8586423591d0e2b414336a38);
         
     
-        var popup_41c2871dd96e4709b70e9dfe93db683b = L.popup({"maxWidth": "100%"});
+        var popup_d714fe1b47834da2a3e5c524d0c000eb = L.popup({"maxWidth": "100%"});
 
         
-            var html_e61fb2f593e24d989f02ed0e4202e148 = $(`<div id="html_e61fb2f593e24d989f02ed0e4202e148" style="width: 100.0%; height: 100.0%;">㈜뉴그린렌트카</div>`)[0];
-            popup_41c2871dd96e4709b70e9dfe93db683b.setContent(html_e61fb2f593e24d989f02ed0e4202e148);
+            var html_39e0de6851744ba18ca23fc124e9dd35 = $(`<div id="html_39e0de6851744ba18ca23fc124e9dd35" style="width: 100.0%; height: 100.0%;">㈜조은렌트카 서산영업소</div>`)[0];
+            popup_d714fe1b47834da2a3e5c524d0c000eb.setContent(html_39e0de6851744ba18ca23fc124e9dd35);
         
 
-        marker_26706b6738e24693afd55f4ead12c35a.bindPopup(popup_41c2871dd96e4709b70e9dfe93db683b)
+        marker_6b4a04c16d4347ec9459a6b4fbf20298.bindPopup(popup_d714fe1b47834da2a3e5c524d0c000eb)
         ;
 
         

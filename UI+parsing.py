@@ -1195,7 +1195,7 @@ def SearchAll():
 def DetailText1():
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-
+    imageMail = PhotoImage(file='Resorce/GMAIL.gif')
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
@@ -1208,7 +1208,7 @@ def DetailText1():
     RenderTextHorizonbar = Scrollbar(frame, orient=HORIZONTAL)
     RenderTextHorizonbar.pack(side=BOTTOM, fill=X, expand=True)
 
-    detailListbox = tkinter.Listbox(frame, font=TempFont, width=36, height=19, borderwidth=12, relief='ridge',
+    detailListbox = tkinter.Listbox(frame, font=TempFont, width=44, height=15, borderwidth=12, relief='ridge',
                               yscrollcommand=RenderTextScrollbar.set, xscrollcommand=RenderTextHorizonbar.set)
 
     detailListbox.pack(side=LEFT, fill=Y)
@@ -1222,7 +1222,7 @@ def DetailText1():
     frame.place(x=20, y=70)
 
 
-    EButton = Button(windowGW, font=TempFont,width = 8 , height = 3, text="이메일 전송", command= SendMail)
+    EButton = Button(windowGW, font=TempFont,width = 8 , height = 3, text=" ",image = imageMail, command= SendMail)
     EButton.pack()
     EButton.place(x=320, y=370)
 
