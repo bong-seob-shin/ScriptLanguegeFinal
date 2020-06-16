@@ -1195,7 +1195,8 @@ def SearchAll():
 def DetailText1():
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    imageMail = PhotoImage(file='Resorce/GMAIL.gif')
+
+
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
@@ -1222,9 +1223,14 @@ def DetailText1():
     frame.place(x=20, y=70)
 
 
-    EButton = Button(windowGW, font=TempFont,width = 8 , height = 3, text=" ",image = imageMail, command= SendMail)
+    mailFont = font.Font(windowGW, size=15, weight='bold', family='Consolas')
+    mailEntry = Entry(windowGW, font=mailFont, width=24, borderwidth=3, relief='ridge')
+    mailEntry.pack()
+    mailEntry.place(x=20, y=390)
+
+    EButton = Button(windowGW, font=TempFont,width = 8 , height = 2, text="메일 보내기", bg = 'light green', command= SendMail)
     EButton.pack()
-    EButton.place(x=320, y=370)
+    EButton.place(x=310, y=385)
 
     #searchAddress,searchName = str(listbox.get(ACTIVE)).split("[")
     num = detailList[listbox.curselection()[0]]
@@ -1658,6 +1664,7 @@ pwindow = Tk("Korea Lent Car Info")
 pwindow.geometry("400x450")
 DataList = []
 mapImage = PhotoImage(file='Resorce/대한민국 지도.gif')
+
 MainImage = Label(pwindow, image=mapImage)
 MainImage.pack()
 MainImage.place(x= 50, y = 50)
