@@ -1289,7 +1289,7 @@ def DetailText1():
     frame.pack()
     frame.place(x=20, y=70)
 
-
+    global mailEntry
     mailFont = font.Font(windowGW, size=15, weight='bold', family='Consolas')
     mailEntry = Entry(windowGW, font=mailFont, width=24, borderwidth=3, relief='ridge')
     mailEntry.pack()
@@ -1392,7 +1392,8 @@ def DetailText1():
     #print(SendAllText)
 
 def SendMail():
-    EmailAddress = "YongJin and BongSub"
+    #print(str(mailEntry.get()))
+    EmailAddress = str(mailEntry.get())
     SendText = SendAllText
     sendEmail.SendEmail(EmailAddress,SendText)
 
