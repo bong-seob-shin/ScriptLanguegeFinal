@@ -1777,7 +1777,7 @@ mapImage = PhotoImage(file='Resorce/대한민국 지도.gif')
 
 MainImage = Label(pwindow, image=mapImage)
 MainImage.pack()
-MainImage.place(x= 50, y = 50)
+MainImage.place(x= 60, y = 50)
 TempFont = font.Font(pwindow, size = 8, weight ='bold' , family ='Conslas')
 
 searchGanWonButton = Button(pwindow, font = TempFont, text ="강원도", bg = 'DarkSeaGreen2', command = SearchGangWondo)
@@ -1853,7 +1853,7 @@ def initTopText():
     TempFont = font.Font(pwindow , size=20, weight='bold', family='Conslas')
     MainText = Label(pwindow, font = TempFont, bg='misty rose',text = "[전국 렌터카 업체 정보]")
     MainText.pack()
-    MainText.place(x=50)
+    MainText.place(x=55)
 
 initTopText()
 pwindow.mainloop()
