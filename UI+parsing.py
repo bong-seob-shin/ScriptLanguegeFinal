@@ -97,11 +97,11 @@ def SearchGangWondo():
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=lambda cityName = city : SortNameList(cityName))
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
-    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont,bg ='RosyBrown1', text="주소 정렬", command=SortAddressList)
+    SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont,bg ='RosyBrown1', text="주소 정렬", command=lambda cityName = city :SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -168,13 +168,12 @@ def SearchKyeongKiDo():
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",command=lambda cityName = city : SortNameList(cityName))
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -241,12 +240,13 @@ def SearchChungNam():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -313,12 +313,13 @@ def SearchDaeJeon():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -385,12 +386,13 @@ def SearchJeonBuk():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -458,12 +460,13 @@ def SearchGwangJu():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -530,12 +533,13 @@ def SearchJeonNam():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -603,12 +607,13 @@ def SearchGyeongBuk():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -676,12 +681,13 @@ def SearchDaegu():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -749,12 +755,13 @@ def SearchBusan():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -820,12 +827,13 @@ def SearchGyeongNam():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -892,12 +900,13 @@ def SearchChungBuk():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -964,12 +973,13 @@ def SearchUlSan():
     MapButton.place(x=215, y=210)
 
     SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+                            command=lambda cityName=city: SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1036,13 +1046,13 @@ def SearchIncheon():
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=lambda cityName = city : SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1108,13 +1118,13 @@ def SearchSeoul():
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=lambda cityName = city : SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1180,13 +1190,13 @@ def SearchJejoo():
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=lambda cityName = city : SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1248,13 +1258,13 @@ def SearchAll():
     MapButton.pack()
     MapButton.place(x=215, y=210)
 
-    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='lightSteelBlue1', text="이름 정렬",
-                            command=SortNameList)
+    SortNameButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg = 'lightSteelBlue1', text="이름 정렬", command=lambda cityName = city : SortNameList(cityName))
+
     SortNameButton.pack()
     SortNameButton.place(x=215, y=290)
 
     SortAddressButton = Button(windowGW, width=18, height=2, font=ILabelFont, bg='RosyBrown1', text="주소 정렬",
-                               command=SortAddressList)
+                               command=lambda cityName=city: SortAddressList(cityName))
     SortAddressButton.pack()
     SortAddressButton.place(x=215, y=370)
 
@@ -1419,11 +1429,42 @@ def AllMap():
     map_osm.save("Map.html")
 
 
-def SortNameList():
-   pass
+def SortNameList(cityName):
+    detailList.clear()
+    listbox.delete(0, 5000)
+    city = str(cityName)
+    sortedNamelist = sorted(carDataList, key=lambda CarData: CarData.name)
+    for data in sortedNamelist:
+        if city in str(data.address):
+            try:
+                text = data.name + " [" + data.address + "]"
+                detailList.append(sortedNamelist.index(data))
+            except:
+                print("error")
+                # if data.address == None:
+                #     text = data.address+" ["+data.name+"]"
 
-def SortAddressList():
-   pass
+            listbox.insert(END, text)
+
+
+def SortAddressList(cityName):
+    detailList.clear()
+    listbox.delete(0, 5000)
+    city = str(cityName)
+    sortedAddresslist = sorted(carDataList, key=lambda CarData: str(CarData.address))
+
+    for data in sortedAddresslist:
+        if city in str(data.address):
+            try:
+                text = data.address + " [" + data.name + "]"
+                detailList.append(sortedAddresslist.index(data))
+            except:
+                print("error")
+                # if data.address == None:
+                #     text = data.address+" ["+data.name+"]"
+
+            listbox.insert(END, text)
+
 
 def SearchIn1():
     detailList.clear()
@@ -1730,7 +1771,7 @@ def SearchInAll():                                 # 전체 검색
 
 pwindow = Tk("Korea Lent Car Info")
 pwindow.geometry("400x450")
-pwindow.configure(bg='ghost white')
+pwindow.configure(bg='misty rose')
 DataList = []
 mapImage = PhotoImage(file='Resorce/대한민국 지도.gif')
 
@@ -1810,7 +1851,7 @@ searchAllButton.place(x = 275, y=60)
 
 def initTopText():
     TempFont = font.Font(pwindow , size=20, weight='bold', family='Conslas')
-    MainText = Label(pwindow, font = TempFont, bg='ghost white',text = "[전국 렌터카 업체 정보]")
+    MainText = Label(pwindow, font = TempFont, bg='misty rose',text = "[전국 렌터카 업체 정보]")
     MainText.pack()
     MainText.place(x=50)
 

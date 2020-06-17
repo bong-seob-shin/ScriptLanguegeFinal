@@ -48,3 +48,5 @@ class CarData:
     def getlongtitude(self):
         return self.longitude
 
+    def __repr__(self):
+        return repr((self.name, self.address))
