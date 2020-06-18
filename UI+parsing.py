@@ -6,6 +6,7 @@ from tkinter import font
 import tkinter.messagebox
 import folium
 import webbrowser
+import spam
 
 Data = parse('전국렌터카.xml')
 root = Data.getroot()
@@ -40,13 +41,13 @@ def SearchGangWondo():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[강원도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[강원도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -111,13 +112,13 @@ def SearchKyeongKiDo():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[경기도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[경기도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -183,12 +184,12 @@ def SearchChungNam():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[충청남도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[충청남도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -256,12 +257,12 @@ def SearchDaeJeon():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[대전 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[대전 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -329,12 +330,12 @@ def SearchJeonBuk():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[전라북도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[전라북도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -402,13 +403,13 @@ def SearchGwangJu():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1,bg='ghost white', text="[광주 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1,bg=bgColor, text="[광주 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -476,12 +477,12 @@ def SearchJeonNam():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[전라남도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[전라남도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -549,13 +550,13 @@ def SearchGyeongBuk():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1,bg='ghost white', text="[경상북도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1,bg=bgColor, text="[경상북도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -623,13 +624,13 @@ def SearchDaegu():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1,bg='ghost white', text="[대구 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1,bg=bgColor, text="[대구 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -697,13 +698,13 @@ def SearchBusan():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[부산 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[부산 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -771,13 +772,13 @@ def SearchGyeongNam():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[경상남도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[경상남도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -842,13 +843,13 @@ def SearchChungBuk():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[충청북도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[충청북도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -916,13 +917,13 @@ def SearchUlSan():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[울산 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[울산 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -989,13 +990,13 @@ def SearchIncheon():
     listvari = [] * 1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[인천 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[인천 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -1062,13 +1063,13 @@ def SearchSeoul():
     listvari =[]*1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[서울 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[서울 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -1134,13 +1135,13 @@ def SearchJejoo():
     listvari = [] * 1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[제주도 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[제주도 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -1206,13 +1207,14 @@ def SearchAll():
     listvari = [] * 1000
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
+    city = " "
     frame = tkinter.Frame(windowGW)
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[전국 렌터카 업체 정보]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[전국 렌터카 업체 정보]")
     TopLabel.pack()
     TopLabel.place(x=50, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -1271,14 +1273,14 @@ def SearchAll():
 def DetailText1():
     windowGW = Tk("GangWon")
     windowGW.geometry("400x450")
-    windowGW.configure(bg='ghost white')
+    windowGW.configure(bg=bgColor)
 
 
     frame = tkinter.Frame(windowGW)
     TempFont = font.Font(windowGW, size=10, weight='bold', family='Conslas')
     TempFont1 = font.Font(windowGW, size=20, weight='bold', family='Conslas')
 
-    TopLabel = Label(windowGW, font=TempFont1, bg='ghost white',text="[세부 사항]")
+    TopLabel = Label(windowGW, font=TempFont1, bg=bgColor,text="[세부 사항]")
     TopLabel.pack()
     TopLabel.place(x=135, y = 10)
     RenderTextScrollbar = Scrollbar(frame)
@@ -1754,6 +1756,8 @@ def SearchIn16():
 
                 listbox.insert(END,text)
 
+
+
 def SearchInAll():                                 # 전체 검색
     detailList.clear()
     listbox.delete(0,50000)
@@ -1769,9 +1773,20 @@ def SearchInAll():                                 # 전체 검색
                     break
             listbox.insert(END,text)
 
+def changeColor():
+    global bgColor
+    global MainText
+    bgColor = spam.changeColor(bgColor)
+    pwindow.configure(bg=bgColor)
+    MainText.configure(bg=bgColor)
+
+global bgColor
+bgColor = 'misty rose'
 pwindow = Tk("Korea Lent Car Info")
 pwindow.geometry("400x450")
-pwindow.configure(bg='misty rose')
+
+pwindow.configure(bg=bgColor)
+
 DataList = []
 mapImage = PhotoImage(file='Resorce/대한민국 지도.gif')
 
@@ -1782,76 +1797,85 @@ TempFont = font.Font(pwindow, size = 8, weight ='bold' , family ='Conslas')
 
 searchGanWonButton = Button(pwindow, font = TempFont, text ="강원도", bg = 'DarkSeaGreen2', command = SearchGangWondo)
 searchGanWonButton.pack()
-searchGanWonButton.place(x = 205, y=70)
+searchGanWonButton.place(x = 215, y=70)
 
 searchGyeonggidoButton = Button(pwindow, font = TempFont, text ="경기도",bg = 'lemon chiffon', command = SearchKyeongKiDo)
 searchGyeonggidoButton.pack()
-searchGyeonggidoButton.place(x = 135, y=130)
+searchGyeonggidoButton.place(x = 145, y=130)
 
 searchChoongNamButton = Button(pwindow, font = TempFont, text ="충청남도", bg = 'yellow', command = SearchChungNam)
 searchChoongNamButton.pack()
-searchChoongNamButton.place(x = 105, y=170)
+searchChoongNamButton.place(x = 115, y=170)
 
 searchDaejeonButton = Button(pwindow, font = TempFont, text ="대전", bg = 'royal blue', command = SearchDaeJeon)
 searchDaejeonButton.pack()
-searchDaejeonButton.place(x = 150, y=200)
+searchDaejeonButton.place(x = 160, y=200)
 
 searchJeonRaBukButton = Button(pwindow, font = TempFont, text ="전라북도", bg = 'yellow green', command = SearchJeonBuk)
 searchJeonRaBukButton.pack()
-searchJeonRaBukButton.place(x = 120, y=250)
+searchJeonRaBukButton.place(x = 130, y=250)
 
 searchGwangjuButton = Button(pwindow, font = TempFont, text =" 광주 ", bg = 'yellow2', command = SearchGwangJu)
 searchGwangjuButton.pack()
-searchGwangjuButton.place(x = 135, y=300)
+searchGwangjuButton.place(x = 145, y=300)
 
 searchJeonRaNamButton = Button(pwindow, font = TempFont, text ="전라남도", bg = 'pale violet red',command = SearchJeonNam)
 searchJeonRaNamButton.pack()
-searchJeonRaNamButton.place(x = 115, y=330)
+searchJeonRaNamButton.place(x = 125, y=330)
 
 searchGyeongSangBukButton = Button(pwindow, font = TempFont, text ="경상북도", bg = 'orchid1',command = SearchGyeongBuk)
 searchGyeongSangBukButton.pack()
-searchGyeongSangBukButton.place(x = 220, y=190)
+searchGyeongSangBukButton.place(x = 230, y=190)
 
 searchDaeguButton = Button(pwindow, font = TempFont, text =" 대구 ",bg ='sienna1', command = SearchDaegu)
 searchDaeguButton.pack()
-searchDaeguButton.place(x = 235, y=240)
+searchDaeguButton.place(x = 245, y=240)
 
 searchUlSanButton = Button(pwindow, font = TempFont, text ="울산",bg = 'cornflower blue', command = SearchUlSan)
 searchUlSanButton.pack()
-searchUlSanButton.place(x = 285, y=275)
+searchUlSanButton.place(x = 295, y=275)
 
 searchBuSanButton = Button(pwindow, font = TempFont, text =" 부산 ",bg ='light goldenrod', command = SearchBusan)
 searchBuSanButton.pack()
-searchBuSanButton.place(x = 265, y=305)
+searchBuSanButton.place(x = 275, y=305)
 
 searchJeJooButton = Button(pwindow, font = TempFont, text =" 제주도 ",bg = 'tan1', command = SearchJejoo)
 searchJeJooButton.pack()
-searchJeJooButton.place(x = 255, y=365)
+searchJeJooButton.place(x = 285, y=365)
 
 
 searchGyeongSangNamButton = Button(pwindow, font = TempFont, text ="경상남도",bg ='PaleTurquoise2', command = SearchGyeongNam)
 searchGyeongSangNamButton.pack()
-searchGyeongSangNamButton.place(x = 205, y=280)
+searchGyeongSangNamButton.place(x = 215, y=280)
 
 searchChoongBukButton = Button(pwindow, font = TempFont, text ="충청북도", bg ='PeachPuff2', command = SearchChungBuk)
 searchChoongBukButton.pack()
-searchChoongBukButton.place(x = 180, y=140)
+searchChoongBukButton.place(x = 190, y=140)
 
 searchIncheonButton = Button(pwindow, font = TempFont, text =" 인천 ",bg ='salmon1', command = SearchIncheon)
 searchIncheonButton.pack()
-searchIncheonButton.place(x = 100, y=90)
+searchIncheonButton.place(x = 105, y=90)
 
 searchSeoulButton = Button(pwindow, font = TempFont, text =" 서울 ",bg ='lightPink1', command = SearchSeoul)
 searchSeoulButton.pack()
-searchSeoulButton.place(x = 145, y=90)
+searchSeoulButton.place(x = 155, y=90)
 
 searchAllButton = Button(pwindow, font = TempFont, bg = 'papaya whip' ,text =" 전국 ", command = SearchAll)
 searchAllButton.pack()
 searchAllButton.place(x = 275, y=60)
 
+
+changeColorButton = Button(pwindow, font = TempFont, bg = 'papaya whip' ,text =" 색 반전 ", command = changeColor)
+changeColorButton.pack()
+changeColorButton.place(x = 340, y=415)
+
+
+
+
 def initTopText():
+    global MainText
     TempFont = font.Font(pwindow , size=20, weight='bold', family='Conslas')
-    MainText = Label(pwindow, font = TempFont, bg='misty rose',text = "[전국 렌터카 업체 정보]")
+    MainText = Label(pwindow, font = TempFont, bg=bgColor,text = "[전국 렌터카 업체 정보]")
     MainText.pack()
     MainText.place(x=55)
 
